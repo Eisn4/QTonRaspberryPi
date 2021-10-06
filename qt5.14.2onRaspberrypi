@@ -52,7 +52,9 @@ ubuntu history
   make install
   cd /opt/qt5pi/
   rsync -avz --rsync-path="sudo rsync" sysroot/usr/local/qt5pi pi@192.168.16.25:/usr/local
-  
+sudo apt install clang-8
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-8 100
+sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-8 100
   -----------------------------------------------------------------------------------------------------------
   
   Raspberry pi history
@@ -67,6 +69,7 @@ sudo rpi-update
 sudo reboot
 
 sudo apt-get build-dep qt5-qmake
+apt-get install openjdk-8-jre-headless openjdk-8-jre
 sudo apt-get build-dep libqt5webengine-data
 
 sudo apt-get install libboost1.58-all-dev libudev-dev libinput-dev libts-dev libmtdev-dev libjpeg-dev libfontconfig1-dev 
