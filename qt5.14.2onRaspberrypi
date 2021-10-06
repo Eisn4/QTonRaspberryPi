@@ -71,6 +71,7 @@ sudo reboot
 sudo apt-get build-dep qt5-qmake
 sudo apt-get install openjdk-8-jdk
 apt-get install openjdk-8-jre-headless openjdk-8-jre
+sudo update-ca-certificates
 sudo apt-get build-dep libqt5webengine-data
 
 sudo apt-get install libboost1.58-all-dev libudev-dev libinput-dev libts-dev libmtdev-dev libjpeg-dev libfontconfig1-dev 
