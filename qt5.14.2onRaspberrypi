@@ -61,7 +61,7 @@ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-8 100
   
   -----------------------------------------------------------------------------------------------------------
   
-sudo vi /etc/apt/sources.list
+sudo nano /etc/apt/sources.list
 sudo apt update
 sudo apt full-upgrade
 sudo reboot
@@ -69,10 +69,11 @@ sudo rpi-update
 sudo reboot
 
 sudo apt-get build-dep qt5-qmake
-sudo apt-get install openjdk-8-jdk
-apt-get install openjdk-8-jre-headless openjdk-8-jre
-sudo update-ca-certificates
-sudo apt-get build-dep libqt5webengine-data
+sudo apt-get build-dep -y qt4-x11 qtbase-opensource-src
+//sudo apt-get install openjdk-8-jdk
+//apt-get install openjdk-8-jre-headless openjdk-8-jre
+//sudo update-ca-certificates
+//sudo apt-get build-dep libqt5webengine-data
 
 sudo apt-get install libboost1.58-all-dev libudev-dev libinput-dev libts-dev libmtdev-dev libjpeg-dev libfontconfig1-dev 
 sudo apt-get install libssl-dev libdbus-1-dev libglib2.0-dev libxkbcommon-dev libegl1-mesa-dev libgbm-dev libgles2-mesa-dev mesa-common-dev
